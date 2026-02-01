@@ -1,0 +1,13 @@
+.upload-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    animation: fade-in 0.5s ease-out;
+  }
+  
+  @media (max-width: 768px) {
+    .upload-section {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
