@@ -116,6 +116,9 @@ const App = () => {
 
 ### 3. **Service Layer** (Business Logic)
 **Location**: `src/services/`
+> Note: In the current implementation, the AI service is mocked on the frontend.
+> It returns structured analysis data and image references for demo purposes.
+> Real AI image generation requires a backend with GPU-based models.
 
 **Responsibility**:
 - API communication

@@ -1,6 +1,13 @@
 # FitCheck AI - Virtual Try-On Stylist 👗✨
 
 An AI-powered virtual try-on application built with clean architecture and modern React best practices.
+> ⚠️ **Important Note (Demo Version)**  
+> This project is a **frontend-only demo**.  
+> The virtual try-on effect is **simulated by overlaying the selected clothing image onto the user photo**.  
+> **No real AI-based image generation or garment warping is performed yet.**
+>  
+> The architecture is designed to support real AI image generation via a backend service in the future.
+
 
 ## 🏗️ Project Structure
 
@@ -170,6 +177,9 @@ npm run build
 ### Service Layer
 
 #### `aiService.js` - AI Integration
+> Note: In the current implementation, the AI service is mocked on the frontend.
+> It returns structured analysis data and image references for demo purposes.
+> Real AI image generation requires a backend with GPU-based models.
 ```javascript
 generateVirtualTryOn(userPhoto, productImage)
 // Returns: { image, analysis }
@@ -200,6 +210,7 @@ compressImage(base64, maxWidth)  // Optimize large images
 ## 🎯 Features
 
 ### Current
+- ⚠️ Visual try-on is a **UI overlay demo**, not real AI image generation
 - ✅ User photo upload
 - ✅ Product image upload
 - ✅ Product URL fetching (simulated)
